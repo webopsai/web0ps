@@ -1,0 +1,4 @@
+import web0ps.main as web
+
+html = web.fetch_webpage("https://google.com")
+print(html[:500])  # Show first 500 characters
