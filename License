@@ -1,0 +1,27 @@
+
+---
+
+### **2️⃣ `setup.py` (PyPI Setup File)**
+This file configures your package for **PyPI**.
+
+```python
+from setuptools import setup, find_packages
+
+setup(
+    name="web0ps",
+    version="0.1.0",
+    author="Willis Nanye",
+    author_email="willisnanye@webopsai.com",
+    description="A Python library for web automation and AI-powered agents",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/yourusername/web0ps",  # Update with your GitHub repo
+    packages=find_packages(),
+    install_requires=["requests", "beautifulsoup4"],  # Dependencies
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.7",
+)
